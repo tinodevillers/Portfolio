@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tino Devillers</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b780ed27d.js" crossorigin="anonymous"></script>   
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="nav-home">
+                <img src="img/logo_transparent.png" alt="Logo">
+                <span class="nav-item">Accueil</span>
+            </a></li>
+            <div class="navigation-page">
+                <li><a href="#competences">
+                    <i class="fas fa-brain"></i>
+                    <span class="nav-item">Compétences</span>
+                </a></li>
+                <li><a href="#parcours">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="nav-item">Parcours</span>
+                </a></li>
+                <li><a href="#projets">
+                    <i class="fas fa-folder-open"></i>
+                    <span class="nav-item">Projets</span>
+                </a></li>
+                <li><a href="#contact">
+                    <i class="fas fa-id-badge"></i>
+                    <span class="nav-item">Contact</span>
+                </a></li>
+            </div>
+            <li><a href="CV_Tino_Devillers.pdf" id="nav-cv">
+                <i class="fas fa-download"></i>
+                <span class="nav-item">CV</span>
+            </a></li>
+        </ul>
+    </nav>
+    <section id="presentation">
+        <div class="infos">
+            <h1>Tino Devillers</h1>
+            <h3>Passionné par l’informatique, j’ai choisi d’en faire mon domaine d’études. Aujourd’hui, je développe des projets variés qui me permettent d’explorer le web, les algorithmes, les bases de données et plus encore.</h3>
+        </div>
+    </section>
+    <section id="competences">
+        <h1>Compétences</h1>
+        <div class="competences-container">
+            <div class="rond-competences"><img src="img/python.png" alt="Python"></div>
+            <div class="rond-competences"><img src="img/html.png" alt="Html"></div>
+            <div class="rond-competences"><img src="img/css.png" alt="Css"></div>
+            <div class="rond-competences"><img src="img/kotlin.png" alt="Kotlin"></div>
+            <div class="rond-competences"><img src="img/sql.png" alt="Sql"></div>
+            <div class="rond-competences"><img src="img/git.png" alt="Git"></div>
+        </div>
+    </section>
+    <section id="parcours">
+        <div class="parcours-container">
+            <h1>Parcours</h1>
+            <div class="parcours-item" id="lycee">
+                <h4>Lycée Alcide D'Orbigny</h4>
+                <p>Suivi des spécialités <i>Mathématiques</i> et <i>NSI</i> puis obtention du baccalauréat avec mention bien</p>
+            </div>
+            <svg class="ligne" width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 150 0 C 150 75, 150 75, 280 130" stroke="white" fill="transparent" stroke-width="2"/>
+            </svg>
+            <div class="parcours-item" id="IUT">
+                <h4>IUT de Nantes</br>BUT - Informatique</h4>
+                <p>Admission sur dossier depuis <i>Parcoursup</i></p>
+            </div>
+        </div>
+    </section>
+    <section id="projets">
+        <h1>Projets</h1>
+        <div class="projets-container">
+            <div class="projet-item" id="quadtree">
+                <h4>Jeu Quadtree</h4>
+                <a href="projets/quadtree.html">En savoir plus</a>
+                <img src="img/quadtree.png" alt="Quadtree">
+            </div>
+            <div class="projet-item" id="unitrip">
+                <h4>Site web Unitrip</h4>
+                <a href="projets/unitrip.html">En savoir plus</a>
+                <img src="img/unitrip.png" alt="Unitrip">
+            </div>
+            <div class="projet-item" id="premier-site">
+                <h4>Mon premier site web</h4>
+                <a href="projets/premier_site.html">En savoir plus</a>
+                <img src="img/premier_site.png" alt="Premier site">
+            </div>
+            <div class="projet-item" id="traitement-images">
+                <h4>Algorithme de traitement d'images</h4>
+                <a href="projets/traitement_images.html">En savoir plus</a>
+                <img src="img/traitement_images.png" alt="Traitement d'images">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+            <div class="resaux">
+                <a href="https://www.linkedin.com/in/tino-devillers-144056293/"><img src="img/linkedin.png" alt="Linkedin"></a>
+                <a href="https://github.com/tinodevillers"><img src="img/github.png" alt="Github"></a>
+            </div>
+            <div class="email">
+                <img src="img/email.png" alt="Email">
+                <p>tinodevillers@gmail.com</p>
+                <img src="img/copie.png" alt="Copie" id="copie">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

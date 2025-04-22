@@ -1,0 +1,235 @@
+* {
+  color: #DBDEEA;
+  font-family: Inter;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  background-color: #172648;
+  padding-left: 60px;
+}
+
+/*SIDEBAR*/
+
+nav {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #101A32;
+  transition: all 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+li a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.fas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 22px;
+}
+
+#nav-home img {
+  width: 33px;
+  height: 33px;
+  left: 0;
+}
+
+#nav-home .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+nav:hover {
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+li a:hover {
+  background-color: #2F3A6A;
+  transition: all 0.3s ease;
+}
+
+/*CONTENT*/
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 7vh;
+}
+
+/*Accueil*/
+#presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  text-align: center;
+}
+
+/*Competences*/
+.competences-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rond-competences {
+  background-color: #101A32;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 30px 100px 30px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.rond-competences img {
+  width: 120px;
+  height: auto;
+  margin: 10px;
+}
+
+.rond-competences:hover {
+  background-color: #2F3A6A;
+  transition: 0.3s;
+}
+
+/*Parcours*/
+.parcours-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #101A32;
+  border-radius: 15px;
+  margin: 20px;
+  width: 300px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.parcours-item h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.parcours-item i {
+  color: #4EC3B8;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.parcours-item:hover {
+  background-color: #2F3A6A;
+  transition: 0.3s;
+}
+
+/*Projets*/
+.projets-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projet-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #101A32;
+  border-radius: 15px;
+  margin: 50px 150px;
+  width: 200px;
+  height: auto;
+}
+
+.projet-item a {
+  background-color: #4EC3B8;
+  color: black;
+  padding: 10px 20px;
+  margin: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projet-item img{
+  width: 200px;
+  height: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/*Contact*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#contact img {
+  width: 100px;
+  height: auto;
+  margin: 40px;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+#copie {
+  width: 50px;
+  height: auto;
+}

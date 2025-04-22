@@ -1,0 +1,92 @@
+* {
+    color: #DBDEEA;
+    font-family: Inter;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background-color: #172648;
+    padding-left: 60px;
+}
+
+/*SIDEBAR*/
+
+nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #101A32;
+    transition: all 0.3s ease;
+}
+
+li a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 8px;
+    margin-right: 22px;
+}
+
+#nav-home img {
+    width: 45px;
+    height: 45px;
+    left: 0;
+}
+
+#nav-home .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav:hover {
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+li a:hover {
+    background-color: #2F3A6A;
+    transition: all 0.3s ease;
+}
+  
+/*CONTENT*/
+
+/*Travaux*/
+#travaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#travaux h1 {
+    font-size: 40px;
+}
+
+#travaux img {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
