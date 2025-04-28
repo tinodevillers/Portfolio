@@ -70,12 +70,10 @@ li a {
 
 nav:hover {
   width: 200px;
-  transition: all 0.3s ease;
 }
 
 li a:hover {
   background-color: #2F3A6A;
-  transition: all 0.3s ease;
 }
 
 /*CONTENT*/
