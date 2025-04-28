@@ -43,11 +43,15 @@ li a {
   transition: 0.3s;
 }
 
+nav li a {
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
 .fas {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 40px;
   font-size: 20px;
   margin-left: 8px;
   margin-right: 22px;
@@ -95,9 +99,13 @@ h1 {
 .infos {
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 800px;
   text-align: center;
+}
+
+.infos h3 {
+  font-size: 3vh;
 }
 
 /*Competences*/
@@ -134,6 +142,7 @@ h1 {
 /*Parcours*/
 .parcours-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -146,7 +155,7 @@ h1 {
   padding: 20px;
   background-color: #101A32;
   border-radius: 15px;
-  margin: 20px;
+  margin: 0 20px 0 20px;
   width: 300px;
   height: auto;
   transition: 0.3s;
@@ -163,13 +172,42 @@ h1 {
   font-style: normal;
 }
 
-.parcours-item:hover {
-  background-color: #2F3A6A;
+.lien {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101A32;
+  width: 20px;
+  height: 80px;
+}
+
+.degrade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101A32;
+  opacity: 0%;
+  width: 20px;
+  height: 80px;
   transition: 0.3s;
 }
 
+.parcours-item:hover {
+  background-color: #2F3A6A;
+}
+
+.parcours-item:hover + .lien > .degrade {
+  opacity: 100%;
+  background: linear-gradient(#2F3A6A, #101A32 50%);
+}
+
+.lien:has(+ .parcours-item:hover) > .degrade {
+  opacity: 100%;
+  background: linear-gradient(#101A32 50%, #2F3A6A);
+}
+
 /*Projets*/
-.projets-container {
+.projet-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
