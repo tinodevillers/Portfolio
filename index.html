@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tino Devillers</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="styles.css">
@@ -61,11 +62,17 @@
                 <div class="rond-competences" id="Python"><img src="assets/python.png" alt="Python"><p>Python</p></div>
                 <div class="rond-competences" id="Html"><img src="assets/html.png" alt="Html"><p>Html</p></div>
                 <div class="rond-competences" id="Css"><img src="assets/css.png" alt="Css"><p>Css</p></div>
+                <div class="rond-competences" id="Javascript"><img src="assets/javascript.png" alt="Javascript"><p>Javascript</p></div>
                 <div class="rond-competences" id="Kotlin"><img src="assets/kotlin.png" alt="Kotlin"><p>Kotlin</p></div>
                 <div class="rond-competences" id="Sql"><img src="assets/sql.png" alt="Sql"><p>Sql</p></div>
                 <div class="rond-competences" id="Git"><img src="assets/git.png" alt="Git"><p>Git</p></div>
                 <div class="rond-competences" id="Go"><img src="assets/go.png" alt="Go"><p>Golang</p></div>
                 <div class="rond-competences" id="Figma"><img src="assets/figma.png" alt="Figma"><p>Figma</p></div>
+                <div class="rond-competences" id="Angular"><img src="assets/angular.png" alt="Angular"><p>Angular</p></div>
+                <div class="rond-competences" id="React"><img src="assets/react.png" alt="React"><p>React</p></div>
+                <div class="rond-competences" id="Php"><img src="assets/php.png" alt="Php"><p>Php</p></div>
+                <div class="rond-competences" id="MongoDB"><img src="assets/mongodb.png" alt="MongoDB"><p>MongoDB</p></div>
+                <div class="rond-competences" id="Docker"><img src="assets/docker.png" alt="Docker"><p>Docker</p></div>
             </div>
         </section>
 
@@ -166,21 +173,5 @@
             <p>Création d'un programme algorithmique permettant d'appliquer divers filtres et transformations sur des images numériques. Travail axé sur la manipulation matricielle des pixels et l'optimisation des calculs.</p>
         </div>
     </dialog>
-
-    <script>
-        document.querySelectorAll('dialog').forEach(dialog => {
-            dialog.addEventListener('click', (e) => {
-                const dialogDimensions = dialog.getBoundingClientRect()
-                if (
-                    e.clientX < dialogDimensions.left ||
-                    e.clientX > dialogDimensions.right ||
-                    e.clientY < dialogDimensions.top ||
-                    e.clientY > dialogDimensions.bottom
-                ) {
-                    dialog.close()
-                }
-            })
-        });
-    </script>
 </body>
 </html>
