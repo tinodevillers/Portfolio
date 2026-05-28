@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Tino Devillers</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -13,109 +13,174 @@
 </head>
 
 <body>
+    <div id="loader">
+        <img src="assets/logo_transparent.png" alt="Logo">
+    </div>
+
     <nav>
         <ul>
             <li><a href="#" id="nav-home">
-                <img src="img/logo_transparent.png" alt="Logo">
+                <div class="icon-wrapper"><img src="assets/logo_transparent.png" alt="Logo"></div>
                 <span class="nav-item">Accueil</span>
             </a></li>
             <div class="navigation-page">
                 <li><a href="#competences">
-                    <i class="fas fa-brain"></i>
+                    <div class="icon-wrapper"><i class="fas fa-brain"></i></div>
                     <span class="nav-item">Compétences</span>
                 </a></li>
                 <li><a href="#parcours">
-                    <i class="fas fa-graduation-cap"></i>
+                    <div class="icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
                     <span class="nav-item">Parcours</span>
                 </a></li>
                 <li><a href="#projets">
-                    <i class="fas fa-folder-open"></i>
+                    <div class="icon-wrapper"><i class="fas fa-folder-open"></i></div>
                     <span class="nav-item">Projets</span>
                 </a></li>
                 <li><a href="#contact">
-                    <i class="fas fa-id-badge"></i>
+                    <div class="icon-wrapper"><i class="fas fa-id-badge"></i></div>
                     <span class="nav-item">Contact</span>
                 </a></li>
             </div>
-            <li><a href="CV_Tino_Devillers.pdf" id="nav-cv">
-                <i class="fas fa-download"></i>
+            <li><a href="CV_Tino_Devillers.pdf" id="nav-cv" target="_blank">
+                <div class="icon-wrapper"><i class="fas fa-download"></i></div>
                 <span class="nav-item">CV</span>
             </a></li>
         </ul>
     </nav>
-    <section id="presentation">
-        <div class="infos">
-            <h1>Tino Devillers</h1>
-            <h3>Passionné par l'informatique, j'ai choisi d'en faire mon domaine d'études. Aujourd'hui, je développe des projets variés qui me permettent d'explorer le web, les algorithmes, les bases de données et plus encore.</h3>
+    <main>
+        <section id="presentation">
+            <div class="infos">
+                <h1>Tino Devillers</h1>
+                <h3>Passionné par l'informatique, j'ai choisi d'en faire mon domaine d'études. Aujourd'hui, je développe des projets variés qui me permettent d'explorer le web, les algorithmes, les bases de données et plus encore.</h3>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h1>Compétences</h1>
+            <div class="competences-container">
+                <div class="rond-competences" id="Python"><img src="assets/python.png" alt="Python"><p>Python</p></div>
+                <div class="rond-competences" id="Html"><img src="assets/html.png" alt="Html"><p>Html</p></div>
+                <div class="rond-competences" id="Css"><img src="assets/css.png" alt="Css"><p>Css</p></div>
+                <div class="rond-competences" id="Kotlin"><img src="assets/kotlin.png" alt="Kotlin"><p>Kotlin</p></div>
+                <div class="rond-competences" id="Sql"><img src="assets/sql.png" alt="Sql"><p>Sql</p></div>
+                <div class="rond-competences" id="Git"><img src="assets/git.png" alt="Git"><p>Git</p></div>
+                <div class="rond-competences" id="Go"><img src="assets/go.png" alt="Go"><p>Golang</p></div>
+                <div class="rond-competences" id="Figma"><img src="assets/figma.png" alt="Figma"><p>Figma</p></div>
+            </div>
+        </section>
+
+        <section id="parcours">
+            <h1>Parcours</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>IUT de Nantes</h4>
+                        <h5>BUT - Informatique</h5>
+                        <span class="timeline-date">Depuis septembre 2024</span>
+                        <p>Admission sur dossier depuis <i>Parcoursup</i></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Lycée Alcide D'Orbigny</h4>
+                        <h5>Baccalauréat général</h5>
+                        <span class="timeline-date">2024</span>
+                        <p>Suivi des spécialités <i>Mathématiques</i> et <i>NSI</i> puis obtention du baccalauréat avec mention bien</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h1>Projets</h1>
+            <div class="projet-container">
+                <div class="projet-item" onclick="document.getElementById('modal-quadtree').showModal()">
+                    <h4>Jeu Quadtree</h4>
+                    <img src="assets/quadtree.png" alt="Quadtree">
+                </div>
+                <div class="projet-item" onclick="document.getElementById('modal-unitrip').showModal()">
+                    <h4>Site web Unitrip</h4>
+                    <img src="assets/unitrip.png" alt="Unitrip">
+                </div>
+                <div class="projet-item" onclick="document.getElementById('modal-premier').showModal()">
+                    <h4>Mon premier site web</h4>
+                    <img src="assets/premier_site.png" alt="Premier site">
+                </div>
+                <div class="projet-item" onclick="document.getElementById('modal-traitement').showModal()">
+                    <h4>Algorithme d'images</h4>
+                    <img src="assets/traitement_images.png" alt="Traitement d'images">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <div class="contact-container">
+                <div class="reseaux">
+                    <a href="https://www.linkedin.com/in/tino-devillers-144056293/" target="_blank"><img src="assets/linkedin.png" alt="Linkedin"></a>
+                    <a href="https://github.com/tinodevillers" target="_blank"><img src="assets/github.png" alt="Github"></a>
+                </div>
+                <div class="email" onclick="navigator.clipboard.writeText('tinodevillers@gmail.com'); alert('Adresse copiée !')">
+                    <img src="assets/email.png" alt="Email">
+                    <p>tinodevillers@gmail.com</p>
+                    <img src="assets/copie.png" alt="Copie" id="copie">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="modal-quadtree" class="projet-modal">
+        <div class="modal-body">
+            <button class="close-modal" onclick="this.closest('dialog').close()"><i class="fas fa-times"></i></button>
+            <h2>Jeu Quadtree</h2>
+            <img src="assets/quadtree.png" alt="Quadtree Agrandissement">
+            <p>Conception et développement d'un jeu vidéo exploitant la structure de données Quadtree. Ce projet a permis d'optimiser l'espace et la gestion des collisions en partitionnant récursivement l'environnement en nœuds.</p>
         </div>
-    </section>
-    <section id="competences">
-        <h1>Compétences</h1>
-        <div class="competences-container">
-            <div class="rond-competences" id="Python"><img src="img/python.png" alt="Python"><p>Python</p></div>
-            <div class="rond-competences" id="Html"><img src="img/html.png" alt="Html"><p>Html</p></div>
-            <div class="rond-competences" id="Css"><img src="img/css.png" alt="Css"><p>Css</p></div>
-            <div class="rond-competences" id="Kotlin"><img src="img/kotlin.png" alt="Kotlin"><p>Kotlin</p></div>
-            <div class="rond-competences" id="Sql"><img src="img/sql.png" alt="Sql"><p>Sql</p></div>
-            <div class="rond-competences" id="Git"><img src="img/git.png" alt="Git"><p>Git</p></div>
-            <div class="rond-competences" id="Go"><img src="img/go.png" alt="Go"><p>Golang</p></div>
-            <div class="rond-competences" id="Figma"><img src="img/figma.png" alt="Figma"><p>Figma</p></div>
+    </dialog>
+
+    <dialog id="modal-unitrip" class="projet-modal">
+        <div class="modal-body">
+            <button class="close-modal" onclick="this.closest('dialog').close()"><i class="fas fa-times"></i></button>
+            <h2>Site web Unitrip</h2>
+            <img src="assets/unitrip.png" alt="Unitrip Agrandissement">
+            <p>Développement de l'interface et de l'architecture d'un site web dédié aux voyages, en utilisant les standards modernes du web (HTML, CSS). Objectif de créer une plateforme intuitive, responsive et esthétique pour les utilisateurs.</p>
         </div>
-    </section>
-    <section id="parcours">
-        <h1>Parcours</h1>
-        <div class="parcours-container">
-            <div class="parcours-item" id="lycee">
-                <h4>Lycée Alcide D'Orbigny</h4>
-                <p>Suivi des spécialités <i>Mathématiques</i> et <i>NSI</i> puis obtention du baccalauréat avec mention bien</p>
-            </div>
-            <div class="lien">
-                <div class="degrade"></div>
-            </div>
-            <div class="parcours-item" id="IUT">
-                <h4>IUT de Nantes</br>BUT - Informatique</h4>
-                <p>Admission sur dossier depuis <i>Parcoursup</i></p>
-            </div>
+    </dialog>
+
+    <dialog id="modal-premier" class="projet-modal">
+        <div class="modal-body">
+            <button class="close-modal" onclick="this.closest('dialog').close()"><i class="fas fa-times"></i></button>
+            <h2>Mon premier site web</h2>
+            <img src="assets/premier_site.png" alt="Premier Site Agrandissement">
+            <p>Réalisation de mon tout premier projet web avec un quiz interactif sur les expressions. Découverte de l'intégration web et de l'interactivité utilisateur via un design simple et efficace.</p>
         </div>
-    </section>
-    <section id="projets">
-        <h1>Projets</h1>
-        <div class="projet-container">
-            <div class="projet-item" id="quadtree">
-                <h4>Jeu Quadtree</h4>
-                <a href="projets/quadtree.html">En savoir plus</a>
-                <img src="img/quadtree.png" alt="Quadtree">
-            </div>
-            <div class="projet-item" id="unitrip">
-                <h4>Site web Unitrip</h4>
-                <a href="projets/unitrip.html">En savoir plus</a>
-                <img src="img/unitrip.png" alt="Unitrip">
-            </div>
-            <div class="projet-item" id="premier-site">
-                <h4>Mon premier site web</h4>
-                <a href="projets/premier_site.html">En savoir plus</a>
-                <img src="img/premier_site.png" alt="Premier site">
-            </div>
-            <div class="projet-item" id="traitement-images">
-                <h4>Algorithme de traitement d'images</h4>
-                <a href="projets/traitement_images.html">En savoir plus</a>
-                <img src="img/traitement_images.png" alt="Traitement d'images">
-            </div>
+    </dialog>
+
+    <dialog id="modal-traitement" class="projet-modal">
+        <div class="modal-body">
+            <button class="close-modal" onclick="this.closest('dialog').close()"><i class="fas fa-times"></i></button>
+            <h2>Algorithme de traitement d'images</h2>
+            <img src="assets/traitement_images.png" alt="Traitement Images Agrandissement">
+            <p>Création d'un programme algorithmique permettant d'appliquer divers filtres et transformations sur des images numériques. Travail axé sur la manipulation matricielle des pixels et l'optimisation des calculs.</p>
         </div>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-        <div class="contact-container">
-            <div class="resaux">
-                <a href="https://www.linkedin.com/in/tino-devillers-144056293/"><img src="img/linkedin.png" alt="Linkedin"></a>
-                <a href="https://github.com/tinodevillers"><img src="img/github.png" alt="Github"></a>
-            </div>
-            <div class="email">
-                <img src="img/email.png" alt="Email">
-                <p>tinodevillers@gmail.com</p>
-                <img src="img/copie.png" alt="Copie" id="copie">
-            </div>
-        </div>
-    </section>
+    </dialog>
+
+    <script>
+        document.querySelectorAll('dialog').forEach(dialog => {
+            dialog.addEventListener('click', (e) => {
+                const dialogDimensions = dialog.getBoundingClientRect()
+                if (
+                    e.clientX < dialogDimensions.left ||
+                    e.clientX > dialogDimensions.right ||
+                    e.clientY < dialogDimensions.top ||
+                    e.clientY > dialogDimensions.bottom
+                ) {
+                    dialog.close()
+                }
+            })
+        });
+    </script>
 </body>
 </html>
